@@ -309,18 +309,3 @@ Made with 💜 by [Kitsada Khamnuan](https://gong-ix-ii-dev.com) · NSC 2024 Fin
 
 ---
 
-> ### 📌 หมายเหตุการ Setup (ลบ section นี้ก่อน commit จริง)
->
-> รูปภาพ 26 ไฟล์อยู่ที่ Portfolio repo: `src/assets/images/projects/Cybersecurise/ui/`
->
-> ก่อน push ให้ก๊อปไปไว้ที่ `Cybersecurise/docs/screenshots/`:
->
-> ```
-> 0.webp, 1.webp, 2.webp, 3.webp, 4.webp,
-> 4_0.webp, 4_1.webp, 6.webp, 7.webp, 8.webp,
-> 9.webp, 10.webp, 11.webp, 11_1.webp, 11_2.webp,
-> 12.webp, 13.webp, 14.webp, 15.webp, 16.webp,
-> 17.webp, 18.webp, 19.webp, 20.webp, 21.webp
-> ```
->
-> **ทางเลือก:** ใช้ raw URL ของ Portfolio: `https://raw.githubusercontent.com/gong-sn-ix-ii/Portfolio/main/src/assets/images/projects/Cybersecurise/ui/N.webp`

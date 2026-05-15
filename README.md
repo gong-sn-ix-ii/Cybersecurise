@@ -178,7 +178,7 @@
 
 ## 💡 บทเรียนจากการพัฒนา
 
-ระหว่างทำโปรเจกต์นี้ ผมเจอความท้าทายสำคัญ 3 เรื่อง ที่กลายเป็นบทเรียนที่ใช้ได้ในงานต่อ ๆ มาทุกตัว:
+ยกระดับทักษะจากการเขียนแค่ฝั่ง Mobile สู่การทำ End-to-End Integration โดยนำโมเดล NLP ไป Deploy ขึ้น Hugging Face และออกแบบ Backend API ด้วย FastAPI (Python) เพื่อให้แอปพลิเคชัน (Kotlin) สามารถส่งข้อมูล SMS ไปประมวลผลได้อย่างแม่นยำ ทำให้ผมเข้าใจสถาปัตยกรรมการแยกส่วนระบบ (Client-Server) 
 
 ### 🚀 Technical Leap
 
@@ -186,7 +186,7 @@
 
 ### ⚡ Performance Optimization
 
-ตอนแรก Model วิ่งช้ามาก ขยับนิ้วทีเครื่องร้อน ผมต้องลงไปวิเคราะห์ **Bottleneck** ใช้ Android Profiler, ลด Memory Allocation ใน Hot Path, และเปลี่ยนวิธี Inference จนได้ความเร็วระดับ Real-time จริง ๆ — สแกน SMS ได้ทันทีไร้ความหน่วง
+เมื่อต้องประมวลผลผ่าน API ความท้าทายหลักคือ Network Latency ตอนแรกแอปเกิดอาการค้าง (UI Blocking) ระหว่างรอผลสแกน ผมจึงต้องปรับปรุงการทำ Asynchronous Programming (การจัดการ Thread/Coroutines) จัดการ Loading State และ Timeout ให้ดีขึ้น
 
 ### 🎤 Communication & Pitching
 

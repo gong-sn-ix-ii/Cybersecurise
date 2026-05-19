@@ -4,7 +4,7 @@
 
 ### แอปป้องกันภัยไซเบอร์สำหรับคนไทย ขับเคลื่อนด้วย AI/NLP
 
-*สแกน SMS มิจฉาชีพ ตรวจสอบ Blacklist และฝึกภูมิคุ้มกันไซเบอร์ — ทำงานบนเครื่องแบบ Offline*
+*สแกน SMS มิจฉาชีพ ตรวจสอบ Blacklist และฝึกภูมิคุ้มกันไซเบอร์*
 
 [![NSC 2024 Finalist](https://img.shields.io/badge/🏆%20NSC%202024-National%20Finalist-FFBD2E?style=for-the-badge)](https://www.nectec.or.th)
 

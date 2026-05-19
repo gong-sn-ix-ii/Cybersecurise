@@ -1,5 +1,5 @@
 <div align="center">
-*ไฟล์และ Sorucecode ขออณุญาติยังไม่เปิดเผย*
+*ไฟล์และ SourceCode ขออณุญาติยังไม่เปิดเผย*
   
 ### 🛡️ Cybersecurise
 

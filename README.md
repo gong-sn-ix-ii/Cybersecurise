@@ -196,67 +196,7 @@
 
 ## 🚀 วิธีติดตั้งและใช้งาน
 
-> ⚠️ **หมายเหตุ:** แอปนี้พัฒนาเพื่อ Android เท่านั้น (Kotlin) เพราะต้องการสิทธิ์เข้าถึง SMS / System Settings ระดับลึก ซึ่ง iOS ไม่อนุญาต
-
-### สิ่งที่ต้องเตรียม
-
-- Android Studio Hedgehog หรือใหม่กว่า
-- Kotlin `>= 1.9.0`
-- Android SDK API 24+ (Android 7.0 ขึ้นไป)
-- Firebase Project (Authentication + Firestore)
-- API Key สำหรับ CheckGon และ ChaladOhn (สมัครได้ที่เว็บผู้ให้บริการ)
-
-### ขั้นตอนการติดตั้ง
-
-```bash
-# 1. Clone repository
-git clone https://github.com/gong-sn-ix-ii/Cybersecurise.git
-cd Cybersecurise
-
-# 2. เปิดโปรเจกต์ด้วย Android Studio
-# 3. วาง google-services.json ไว้ที่ app/
-
-# 4. สร้างไฟล์ local.properties เพิ่ม API Keys
-echo "CHECKGON_API_KEY=your_key_here" >> local.properties
-echo "CHALADOHN_API_KEY=your_key_here" >> local.properties
-
-# 5. Build & Run
-./gradlew assembleDebug
-```
-
-### Build APK สำหรับติดตั้ง
-
-```bash
-./gradlew assembleRelease
-# APK จะอยู่ที่ app/build/outputs/apk/release/
-```
-
----
-
-## 📂 โครงสร้างโปรเจกต์
-
-```
-Cybersecurise/
-├── app/
-│   ├── src/main/
-│   │   ├── kotlin/com/cybersecurise/
-│   │   │   ├── ui/                  # Activity + Fragment + Compose
-│   │   │   ├── ml/                  # NLP Model Wrapper
-│   │   │   ├── scanner/             # Vulnerability Scanner
-│   │   │   ├── blacklist/           # CheckGon + ChaladOhn API
-│   │   │   ├── quiz/                # Cybersecurity Quiz Engine
-│   │   │   └── data/                # Repository + Firebase
-│   │   ├── assets/
-│   │   │   └── model.tflite         # NLP Model (On-device)
-│   │   └── res/
-│   └── build.gradle.kts
-├── ml-training/                     # Python + Jupyter
-│   ├── notebooks/
-│   ├── data/
-│   └── fastapi_test/
-└── docs/
-    └── screenshots/
-```
+> ⚠️ **หมายเหตุ:** ยังไม่เปิดเผย SourceCode เพื่อนำไปพัฒนาต่อ แอปนี้พัฒนาเพื่อ Android เท่านั้น (Kotlin) เพราะต้องการสิทธิ์เข้าถึง SMS / System Settings ระดับลึก ซึ่ง iOS ไม่อนุญาต
 
 ## 👨‍💻 ผู้พัฒนา
 

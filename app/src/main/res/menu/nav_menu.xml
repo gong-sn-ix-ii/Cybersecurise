@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="CyberSecurise Features">
+        <menu>
+            <item android:icon="@drawable/icon_scan_account" android:id="@+id/nav_scan_account" android:title="ตรวจสอบบัญชี"/>
+            <item android:icon="@drawable/icon_call" android:id="@+id/nav_scan_phone" android:title="ตรวจสอบเบอร์โทรศัพท์"/>
+            <item android:icon="@drawable/icon_scan_sms" android:id="@+id/nav_scan_SMS" android:title="ตรวจสอบข้อความ SMS"/>
+            <item android:icon="@drawable/icon_settings_dangerous" android:id="@+id/nav_settings" android:title="การตั้งค่าที่อาจเป็นอันตราย"/>
+            <item android:icon="@drawable/icon_app_warning" android:id="@+id/nav_appinstall" android:title="แอปพลิเคชันที่อาจเป็นภัยอันตราย"/>
+        </menu>
+    </item>
+    <item android:title="Home Screen">
+        <menu>
+            <item android:icon="@drawable/icon_home" android:id="@+id/nav_home" android:title="หน้าหลัก"/>
+        </menu>
+    </item>
+    <item android:title="Advice and News">
+        <menu>
+            <item android:icon="@drawable/icon_exam" android:id="@+id/nav_tester" android:title="แบบทดสอบกลลวงโลกออนไลน์"/>
+            <item android:icon="@drawable/icon_report" android:id="@+id/nav_culprit" android:title="รายงานผู้ก่อเหตุ"/>
+        </menu>
+    </item>
+</menu>

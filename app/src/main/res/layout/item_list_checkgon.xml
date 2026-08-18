@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/border_radius"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/title_bank_to_abbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="bank_to_abbr  =  TTB"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/title_bank_to_acct"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/title_bank_to_abbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="bank_to_acct  =   123123"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/title_createdTime"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/title_bank_to_acct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="createdTime  =   2002-01-01"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/title_dataSource"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/title_createdTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="dataSource  =   CCIB"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/title_status"
+
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/title_dataSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="status  =   2002-01-01"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

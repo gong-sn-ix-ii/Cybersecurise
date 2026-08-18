@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/GhostWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_mumidesuka"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/cyber_radius_theme_app"
+            android:src="@drawable/quick2"
+            android:contentDescription="TODO" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fadeScrollbars="true"
+            android:layout_weight="1"> <!-- ใช้ layout_weight เพื่อให้ ScrollView ขยายเต็มพื้นที่ที่เหลือ -->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"> <!-- เพิ่ม padding ถ้าต้องการ -->
+
+                <ProgressBar
+                    android:id="@+id/progress_information_progress_bar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:contentDescription="TODO"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/text_state_scan_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="กำลังตรวจสอบรายชื่อจาก contact"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp" /> <!-- เปลี่ยนจาก dp เป็น sp สำหรับขนาดตัวอักษร -->
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

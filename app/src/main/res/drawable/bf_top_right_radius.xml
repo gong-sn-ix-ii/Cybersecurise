@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/black_background">
+        <shape android:shape="rectangle">
+            <solid android:color="#0F1426" />
+        </shape>
+    </item>
+    <!-- ส่วนที่โค้งมนเป็นสีขาว -->
+    <item android:id="@+id/DarkBlue_curve">
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners android:topRightRadius="60dp" />
+        </shape>
+    </item>
+</layer-list>

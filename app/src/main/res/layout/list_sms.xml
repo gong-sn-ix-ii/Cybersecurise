@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="clip_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profileSMS"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/picture_account" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/senderSMS"
+                        android:layout_width="wrap_content"
+                        android:maxWidth="160dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sender"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:layout_gravity="start"
+                        android:textSize="16dp" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/status_detect"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:maxWidth="160dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Sender"-->
+<!--                        android:textStyle="bold"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:layout_gravity="start"-->
+<!--                        android:textSize="16dp" />-->
+
+                    <ImageView
+                        android:id="@+id/spamAlert"
+                        android:padding="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/baseline_assignment_late_24"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dateSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="dd/mm/YYYY 0000"
+                    android:textAlignment="viewEnd"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textAlignment="textStart"
+                    android:id="@+id/messageSMS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:textColor="@color/black"
+                    android:text="Message"
+                    android:textSize="12dp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

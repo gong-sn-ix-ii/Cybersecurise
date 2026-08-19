@@ -18,10 +18,14 @@ class requestAPI_DetectSMS(private val context: Context) {
         Thread {
             try {
                 var data: MessageSMSModels? = null
-                val encodedMsg = URLEncoder.encode(msg, "UTF-8")
-                val url = URL("http://203.158.140.104:8080/msg=$encodedMsg")
+                val src = msg ?: ""
+                val safeMsg = if (src.length > 500) src.substring(0, 500) else src
+                val encodedMsg = URLEncoder.encode(safeMsg, "UTF-8")
+                val url = URL("https://gong-sn-ix-ii-spam-scam-sms-detect.hf.space/msg=$encodedMsg")
                 val connection = url.openConnection() as HttpURLConnection
                 connection.requestMethod = GETPOST
+                connection.connectTimeout = 15000
+                connection.readTimeout = 30000
                 if (connection.responseCode == HttpsURLConnection.HTTP_OK) {
                     val inputStream = connection.inputStream
                     val inputStreamReader = InputStreamReader(inputStream, "UTF-8")

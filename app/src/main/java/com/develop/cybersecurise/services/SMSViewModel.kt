@@ -60,11 +60,13 @@ class SmsViewModel : ViewModel() {
 
     private fun fetchDetectionSMS(msg: String): MessageSMSModels? {
         Log.d("Check Sender SMS and Message ALL", "MSG = $msg")
-//        val encodedMsg = URLEncoder.encode(msg, "UTF-8")
-//        Log.d("Check msg To API", "Encode[2] = $encodedMsg")
-        val url = URL("http://203.158.140.104:8080/msg=$msg")
+        val safeMsg = if (msg.length > 500) msg.substring(0, 500) else msg
+        val encodedMsg = URLEncoder.encode(safeMsg, "UTF-8")
+        val url = URL("https://gong-sn-ix-ii-spam-scam-sms-detect.hf.space/msg=$encodedMsg")
         val connection = url.openConnection() as HttpURLConnection
         connection.requestMethod = "GET"
+        connection.connectTimeout = 15000
+        connection.readTimeout = 30000
         return if (connection.responseCode == HttpURLConnection.HTTP_OK) {
             val inputStream = connection.inputStream
             val inputStreamReader = InputStreamReader(inputStream, "UTF-8")
